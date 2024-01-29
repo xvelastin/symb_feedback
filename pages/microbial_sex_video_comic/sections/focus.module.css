@@ -1,0 +1,58 @@
+﻿/*body {*/
+/*    overflow: hidden;*/
+/*}*/
+
+.focus-container {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.focus-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bug-container {
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+image {
+    
+}
+
+.bug-link {
+    z-index: 0;
+    position: fixed;
+    
+}
+.bug-link:hover {
+    cursor: pointer;
+}
+
+.link-image {
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    /*opacity: 67%;*/
+    /*transition: all 0.8s ease-in-out;*/
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+
+@keyframes translate {
+    from {transform: translate(0%)}
+    to {transform:translate(50%)}
+}
