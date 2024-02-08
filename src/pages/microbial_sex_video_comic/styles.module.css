@@ -1,0 +1,174 @@
+﻿/* *** MAIN / SHARED *** */
+
+.backButton {
+    z-index: 100;
+    position: fixed;
+}
+
+.backButton:hover {
+    
+}
+
+.background {
+    z-index: -1000;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.MicrobialSexVideoComic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    cursor: url("/public/toi/cursor.png"), crosshair;   
+}
+
+
+/* *** ENTER *** */
+
+.background_video_container {
+    z-index: -1000;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background_video {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.enter_button {
+    position: fixed;
+    width: 8vw;
+    top: 80vh;
+    left: 60vw;
+}
+
+.enter_image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.enter_image:hover {
+    cursor: url("/public/toi/cursor_glow.png"), crosshair;
+}
+
+/* *** FOCUS *** */
+
+.focus_container {
+    /*pointer-events: none;*/
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.focus_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bug_container {
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+image {
+
+}
+
+.bug_link_container {
+    position: fixed;
+    transition-timing-function:ease-in-out;
+}
+
+.bug_link {
+    z-index: 0;
+    position: fixed;
+
+}
+.bug_link:hover {
+    cursor: url("/public/toi/cursor_glow.png"), pointer;    
+}
+
+.link_image {
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    /*opacity: 67%;*/
+    /*transition: all 0.8s ease-in-out;*/
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+
+@keyframes translate {
+    from {transform: translate(0%)}
+    to {transform:translate(50%)}
+}
+
+
+
+
+/* *** GALLERY **** */
+
+.loading {
+    text-align: center;
+    color: grey;
+}
+
+.gallery {
+   
+}
+
+.gallery_wall {
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.gallery_row {
+    /*display: none*/
+    display: flex;
+}
+
+.gallery_video_container {
+    /*display: inline;*/
+}
+
+
+.gallery_video {
+    box-sizing: border-box;
+    padding: 0.2vh 0.2vw;
+    width: 25vw;
+    /*opacity: 0;*/
+    transition: opacity 2s ease-in-out, border 150ms ease-in-out;;    
+}
+

@@ -1,0 +1,6 @@
+﻿.cursorPopup {
+    pointer-events: none;
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
